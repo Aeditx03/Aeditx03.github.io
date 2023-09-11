@@ -72,7 +72,9 @@ img {
     justify-content: center;
     align-items: center;
     border-bottom: red 3px solid;
-    border-radius: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(255, 0, 0, 0.274));
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
     width: 100%;
 }
 
@@ -83,8 +85,10 @@ a {
 
 
 
-h4 {
+.titel h4 {
     color: rgb(5, 217, 255);
+    text-shadow: 2px 2px 30px rgb(0, 238, 255);
+
 }
 
 i {
@@ -92,10 +96,18 @@ i {
     /* box-shadow: hwb(0 0% 100%) 2px 2px 30px 5px; */
     margin-top: 20%;
     margin-right: 5px;
+
 }
 
 .social a {
     color: rgb(0, 221, 255);
+
+}
+
+.social i:hover {
+    box-shadow: 2px 2px 40px 10px rgb(255, 0, 0);
+    color: red;
+
 }
 
 .social {
@@ -176,7 +188,7 @@ button:hover {
 
     .about {
         height: 230px;
-        padding-top: 10px;
+        padding-top: 0px;
     }
 
     .about p,
@@ -190,6 +202,14 @@ button:hover {
 
     h4 {
         font-size: 13px;
+    }
+
+    h3 {
+        scale: 0.95;
+    }
+
+    .titel h4 {
+        scale: 0.9;
     }
 }
 
@@ -207,6 +227,7 @@ button:hover {
 
     .about {
         height: 200px;
+        padding-top: 0%;
     }
 
     h4 {
@@ -223,5 +244,11 @@ button:hover {
         margin-top: 7px;
     }
 
+    h3 {
+        scale: 0.7;
+    }
 
+    .titel h4 {
+        scale: 0.9;
+    }
 }
