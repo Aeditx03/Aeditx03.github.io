@@ -63,6 +63,7 @@ img {
     height: 150px;
     width: fit-content;
     animation: logo-animate 0.7s cubic-bezier(0.5, 0, 0.75, 1.2) 0.4s forwards;
+    opacity: 0;
 
 }
 
@@ -87,6 +88,7 @@ a {
 
 h3 {
     animation: button-animate 0.7s cubic-bezier(0.5, 0, 0.75, 1) 0.4s forwards;
+    opacity: 0;
 
 }
 
@@ -94,6 +96,7 @@ h3 {
     color: rgb(5, 217, 255);
     text-shadow: 2px 2px 30px rgb(0, 238, 255);
     animation: button2-animate 0.7s cubic-bezier(0.5, 0, 0.75, 1) 0.4s forwards;
+    opacity: 0;
 
 }
 
@@ -189,6 +192,7 @@ button {
     transition: all ease 0.7s;
     font-weight: 600;
     animation: button-animate 0.7s ease-in 0s forwards;
+    opacity: 0;
     /* Apply the animation */
 
 }
@@ -205,12 +209,21 @@ button {
     background-color: transparent;
     font-weight: 600;
     animation: button2-animate 0.7s ease-in 0s forwards;
+    opacity: 0;
 
 
 }
 
 button:hover {
     width: 140px;
+    box-shadow: 2px 2px 20px 0.1px rgb(201, 9, 51);
+    color: rgb(255, 255, 255);
+}
+
+.button2:hover {
+    width: 140px;
+    box-shadow: 2px 2px 20px 0.1px rgb(201, 9, 51);
+    color: red;
 }
 
 @media (max-width:768px)and (min-width:425px) {
@@ -297,6 +310,8 @@ button:hover {
         color: rgb(0, 221, 255);
 
     }
+
+
 
     100% {
         box-shadow: 2px 2px 40px 6px rgb(201, 9, 51);
