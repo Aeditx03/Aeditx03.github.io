@@ -1,3 +1,5 @@
+/* ©️designed by Bisal 
+Tg:@Biisal */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
     text-transform: capitalize;
     box-sizing: border-box;
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+
 }
 
 html {
@@ -12,12 +15,13 @@ html {
     justify-content: center;
     align-items: center;
     height: 100%;
+
 }
 
 i:active {
     color: red;
-}
 
+}
 
 #particles-js {
     position: relative;
@@ -32,14 +36,14 @@ i:active {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
-
 body {
-
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .mar-abt {
@@ -76,9 +80,13 @@ img {
     align-items: center;
     border-bottom: red 3px solid;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(255, 0, 0, 0.274));
+    background-color: rgb(0, 0, 0);
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
     width: 100%;
+    animation: title-an 1s ease-in 0.1s forwards;
+    opacity: 0;
+
 }
 
 p,
@@ -89,7 +97,6 @@ a {
 h3 {
     animation: button-animate 0.7s cubic-bezier(0.5, 0, 0.75, 1) 0.4s forwards;
     opacity: 0;
-
 }
 
 .titel h4 {
@@ -97,15 +104,12 @@ h3 {
     text-shadow: 2px 2px 30px rgb(0, 238, 255);
     animation: button2-animate 0.7s cubic-bezier(0.5, 0, 0.75, 1) 0.4s forwards;
     opacity: 0;
-
 }
 
 i {
     margin-bottom: 5px;
-    /* box-shadow: hwb(0 0% 100%) 2px 2px 30px 5px; */
     margin-top: 20%;
     margin-right: 5px;
-
 }
 
 .social a {
@@ -114,37 +118,36 @@ i {
 }
 
 /* icons animation */
+
 .a1 i {
-    animation: iconanimate 1.5s ease 0.3s infinite;
+    animation: iconanimate 1.5s ease-in 0.3s infinite;
 
 }
 
 .a2 i {
-    animation: iconanimate 1.5s ease 0.6s infinite;
+    animation: iconanimate 1.5s ease-in 0.6s infinite;
 
 }
 
 .a3 i {
-    animation: iconanimate 1.5s ease 0.9s infinite;
+    animation: iconanimate 1.5s ease-in 0.9s infinite;
 
 }
 
 .a4 i {
-    animation: iconanimate 1.5s ease 1.2s infinite;
+    animation: iconanimate 1.5s ease-in 1.2s infinite;
 
 }
 
 .a5 i {
-    animation: iconanimate 1.5s ease 1.5s infinite;
+    animation: iconanimate 1.5s ease-in 1.5s infinite;
 
 }
-
-/* icons animation */
 
 
 .social i:hover {
     box-shadow: 2px 2px 40px 10px rgb(255, 0, 0);
-    color: red;
+    color: rgb(255, 0, 0);
 
 }
 
@@ -158,7 +161,6 @@ i {
 }
 
 .about {
-    /* height: 250px; */
     width: 100%;
     background-color: #000000;
     padding: 25px 25px 0px;
@@ -178,7 +180,6 @@ footer {
     width: fit-content;
     width: 236.49px;
     display: flex;
-
     justify-content: space-around;
 }
 
@@ -191,15 +192,12 @@ button {
     color: rgb(0, 0, 0);
     transition: all ease 0.7s;
     font-weight: 600;
-    animation: button-animate 0.7s ease-in 0s forwards;
+    animation: button-color-animate 4s ease-in-out 1s infinite, button-animate 0.7s ease-in 0s forwards;
     opacity: 0;
-    /* Apply the animation */
 
 }
 
 .button2 {
-
-
     width: 115px;
     height: 36px;
     border-color: transparent;
@@ -210,7 +208,6 @@ button {
     font-weight: 600;
     animation: button2-animate 0.7s ease-in 0s forwards;
     opacity: 0;
-
 
 }
 
@@ -225,6 +222,10 @@ button:hover {
     box-shadow: 2px 2px 20px 0.1px rgb(201, 9, 51);
     color: red;
 }
+
+
+/* Media query */
+
 
 @media (max-width:768px)and (min-width:425px) {
     .hero {
@@ -305,17 +306,39 @@ button:hover {
     }
 }
 
+
+/* <-- Animations --> */
+
+
 @keyframes iconanimate {
     0% {
         color: rgb(0, 221, 255);
+        box-shadow: 2px 2px 40px 10px rgb(0, 63, 250);
 
     }
 
 
 
     100% {
-        box-shadow: 2px 2px 40px 6px rgb(201, 9, 51);
+        box-shadow: 2px 2px 40px 10px rgb(255, 4, 58);
         color: red;
+
+    }
+}
+
+@keyframes button-color-animate {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        color: white;
+        box-shadow: 2px 2px 20px 0.1px rgb(201, 9, 51);
+        color: rgb(255, 255, 255);
+        opacity: 1;
+    }
+
+    100% {
         opacity: 1;
     }
 }
@@ -358,6 +381,16 @@ button:hover {
         transform: translateY(0);
         /* Move the button to its current position */
 
+        opacity: 1;
+    }
+}
+
+@keyframes title-an {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
         opacity: 1;
     }
 }
