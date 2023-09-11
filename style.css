@@ -42,6 +42,10 @@ body {
     align-items: center;
 }
 
+.mar-abt {
+    margin-top: 25px;
+}
+
 .hero {
     height: 537px;
     width: 400px;
@@ -52,10 +56,13 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     border-radius: 6px;
-
 }
 
+img {
 
+    height: 150px;
+    width: fit-content;
+}
 
 .titel {
     color: rgb(255, 255, 255);
@@ -106,6 +113,8 @@ i {
     background-color: #000000;
     padding: 25px 25px 0px;
     color: white;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
 }
 
 .about p,
@@ -151,4 +160,68 @@ button {
 
 button:hover {
     width: 140px;
+}
+
+@media (max-width:768px)and (min-width:425px) {
+    .hero {
+        height: 450px;
+        margin: 60px;
+        width: 343px;
+    }
+
+    img {
+        height: 120px;
+        width: min-content;
+    }
+
+    .about {
+        height: 230px;
+        padding-top: 10px;
+    }
+
+    .about p,
+    a {
+        font-size: 14px;
+    }
+
+    .mar-abt {
+        margin-top: 20px;
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:425px) {
+    .hero {
+        height: 400px;
+        margin: 45px;
+        width: auto;
+    }
+
+    img {
+        height: 120px;
+        width: min-content;
+    }
+
+    .about {
+        height: 200px;
+    }
+
+    h4 {
+        font-size: small;
+    }
+
+    .about a,
+    p {
+        font-size: 10px;
+        padding-top: 0px;
+    }
+
+    .mar-abt {
+        margin-top: 7px;
+    }
+
+
 }
